@@ -11,4 +11,16 @@ public interface EmployeeInterface {
   Employee getEmployeeById(long id);
 
   Page<Employee> getEmployeeListByPageAndPageSize(Pageable pageable);
+
+  List<Employee> getEmployeeByGender(String gender);
+
+  Employee saveEmployee(Employee employee);
+
+  Employee updateEmployeeById(long id, Employee employee);
+
+  String deleteEmployeeById(long id);
 }
+
+
+
+
